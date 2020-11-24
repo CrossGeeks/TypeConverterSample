@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TypeConverterXF.MainPage"
+             xmlns:local="clr-namespace:TypeConverterXF.Controls">
+    <StackLayout Padding="20">
+       
+        <local:MyCustomView OptionSelected="Option2"
+                            OptionsList="Option1,Option2,Option3"
+                            MyElementFontSize="12"
+                            Text="Testing Indicator"
+                            IndicatorView="IndicatorView"/>
+
+        <local:IndicatorView x:Name="IndicatorView"/>
+    </StackLayout>
+</ContentPage>
